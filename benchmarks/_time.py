@@ -1,3 +1,5 @@
+# adapted from CuPy. see ../LICENSE-3rdparty.txt
+
 import math as _math
 import time as _time
 

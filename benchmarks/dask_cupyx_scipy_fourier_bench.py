@@ -1,3 +1,5 @@
+# adapted from cuCIM, see ../LICENSE-3rdparty.txt
+
 import os
 import pickle
 
