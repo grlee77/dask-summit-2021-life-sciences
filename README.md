@@ -1,20 +1,20 @@
 # Dask Summit 2021 - image processing benchmarks
 
-This respoistory contains benchmarking and plotting scripts used to generate
+This repository contains benchmarking and plotting scripts used to generate
 performance comparisons for dask-image, SciPy and CuPy for a lightning talk at
-Dask Summit 2021. The functions tested were restricted to those present in
-all three libraries.
+[Dask Summit 2021](https://summit.dask.org/). The functions tested were restricted
+to those present in all three libraries.
 
 ## Timing scikit-image restoration functions accelerated with apply_parallel
 
 There is an example notebook for this located at
-`benchmarks/skimage_apply_parallel.ipynb`
+[benchmarks/skimage_apply_parallel.ipynb](https://github.com/grlee77/dask-summit-2021-life-sciences/blob/main/benchmarks/skimage_apply_parallel.ipynb)
 
-Recent versions of dask and scikit-image will be required. It has only been
+Recent versions of Dask and scikit-image will be required. It has only been
 tested with
 
-scikit-image >=0.18
-dask >= 2020.12.0
+scikit-image>=0.18
+dask>=2020.12.0
 
 A recent PR for scikit-image fixed multi-threaded use of `denoise_tv_bregman`
 and `denoise_bilateral`, but has not yet appeared in a released version of the
@@ -32,7 +32,7 @@ These scripts generate Markdown tables and CSV format outputs containing
 benchmark results.
 
 Selected results were manually copied into plotting scripts in
-`benchmarks/viz`.
+[benchmarks/viz](https://github.com/grlee77/dask-summit-2021-life-sciences/blob/main/benchmarks/viz).
 
 ### Requirements for Dask/CuPy/SciPy benchmarks
 
@@ -41,8 +41,8 @@ SciPy >= 1.6
 pandas
 dask-image (pre-release)
 
-Running the benchmarks currently requires a branch incorporating a few recent
-PRs for dask-image that were opened after the release of v0.6.0:
+Running the benchmarks currently requires a branch of dask-image
+incorporating a few recent PRs that were opened after the release of v0.6.0:
 
 https://github.com/dask/dask-image/pull/215
 
