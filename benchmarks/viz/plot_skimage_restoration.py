@@ -54,7 +54,7 @@ n_gpus = 0  # number of GPU models to include in the plot. Must be between 1 and
 # [print(f"{name}: acceleration = {acc}") for name, acc in zip(labels, accels_a100)]
 
 if n_gpus == 0:
-    # Plot A100 results vs. CPU only
+    # Plot Dask results vs. SciPy
     width = 0.43  # the width of the bars
     figsize = [15, 5.58]
     fig, ax = plt.subplots(figsize=figsize)

@@ -62,7 +62,7 @@ accels_ti = np.array(greg_cpu_means) / np.array(gpu_means_1080ti)
 
 
 if n_gpus == 0:
-    # Plot A100 results vs. CPU only
+    # Plot Dask results vs. SciPy
     width = 0.43  # the width of the bars
     figsize = [18, 5.58]
     fig, ax = plt.subplots(figsize=figsize)
@@ -71,7 +71,7 @@ if n_gpus == 0:
     rects2 = ax.bar(x + width / 2, accels_dask, width, label='dask-image (CPU): Intel Core i9-7900X', color='#6A16F8')
 
 elif n_gpus == 1:
-    # A100 and V100 results vs. CPU
+    # Plot Dask and 1080 Ti results vs. SciPy
     figsize = [22, 6.54]
     fig, ax = plt.subplots(figsize=figsize)
 
@@ -81,7 +81,7 @@ elif n_gpus == 1:
     rects3 = ax.bar(x + width, accels_ti, width, label='CuPy (GPU): NVIDIA GTX 1080 Ti', color='#2CC9D9')
 
 elif n_gpus == 2:
-    # A100, V100 and GTX-1080 Ti results vs. CPU
+    # A100, V100 and GTX-1080 Ti results vs. SciPy
     figsize = [30, 7.36]
     fig, ax = plt.subplots(figsize=figsize)
 

@@ -54,7 +54,7 @@ accels_daskv18 = np.array(greg_cpu_means) / np.array(greg_dask_cpu_means_v18)
 # [print(f"{name}: acceleration = {acc}") for name, acc in zip(labels, accels_a100)]
 
 if n_gpus == 0:
-    # Plot A100 results vs. CPU only
+    # Plot Dask results vs. SciPy
     width = 0.43  # the width of the bars
     figsize = [15, 5.58]
     fig, ax = plt.subplots(figsize=figsize)
